@@ -21,7 +21,7 @@ public class EmailNotification {
     private String body;
     private Date sent_dt;
 
-    EmailNotification() {
+    public EmailNotification() {
 
     }
 
