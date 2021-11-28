@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -14,14 +16,51 @@ public class EmailNotification {
     private Long id;
     private String type;
     private String to;
+    private String cc;
+    private String subject;
+    private String body;
+    private Date sent_dt;
 
     EmailNotification() {
 
     }
 
-    EmailNotification(String type, String to) {
+    EmailNotification(String type, String to, String cc) {
         this.type = type;
         this.to = to;
+        this.cc = cc;
+    }
+
+    public Date getSent_dt() {
+        return sent_dt;
+    }
+
+    public void setSent_dt(Date sent_dt) {
+        this.sent_dt = sent_dt;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getCc() {
+        return cc;
+    }
+
+    public void setCc(String cc) {
+        this.cc = cc;
     }
 
     public Long getId() {
