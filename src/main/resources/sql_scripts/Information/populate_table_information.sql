@@ -1,7 +1,7 @@
 use my_db;
 
 INSERT INTO `information` (`content`)
-VALUES ('Nanz eats butts for breakfast, lunch, and dinner.');
+VALUES ('An initial content thingy');
 
 INSERT INTO `information` (`content`)
-VALUES ('She eats so many butts, she cant get any thinner.');
+VALUES ('Another initial content record! Nice.');
